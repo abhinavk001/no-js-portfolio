@@ -20,13 +20,15 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
             font-size: 2.5rem;
             font-weight: 400;
-            margin-bottom: 50px;
             letter-spacing: -0.02em;
+            margin-bottom: 35px;
         }
 
         h2 {
@@ -37,7 +39,8 @@
         }
 
         img {
-            padding-left: 20px;
+            border-radius: 10%;
+            margin-right: 20px;
         }
 
         section {
@@ -70,11 +73,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
 
         #about{
             display: flex;
             align-items: center;
+        }
+
+        #content {
+            margin-top: 120px;
         }
 
         .project {
@@ -146,6 +154,7 @@
             img {
                 padding-left: 0px;
                 margin-bottom: 20px;
+                
             }
 
             #about {
@@ -157,79 +166,81 @@
     </style>
 </head>
 <body>
-    <h1>Abhinav K</h1>
+        <div id="content">
 
-    <section id="about">
-        <div>
-            <h2>About</h2>
-            <p>Abhinav K is a developer and problem solver passionate about building intelligent, secure, and scalable systems. 
-                From crafting cloud-native applications to configuring clusters and cloud infrastructure, Abhinav blends 
-                creativity with engineering precision. With experience spanning AI agents, API development, cloud infrastructure, 
-                and DevOps automation, he thrives at the intersection of innovation and practicality, turning complex ideas into 
-                impactful software.
-            </p>
+            <h1>Abhinav K</h1>
+
+            <section id="about">
+                <div>
+                    <h2>About</h2>
+                    <p>Abhinav K is a developer and problem solver passionate about building intelligent, secure, and scalable systems. 
+                        From crafting cloud-native applications to configuring clusters and cloud infrastructure, Abhinav blends 
+                        creativity with engineering precision. With experience spanning AI agents, API development, cloud infrastructure, 
+                        and DevOps automation, he thrives at the intersection of innovation and practicality, turning complex ideas into 
+                        impactful software.
+                    </p>
+            </div>
+            <!-- <img src="./Abhinav_profile_pic.jpg" alt="Abhinav's profile pic" height="217px"> -->
+            </section>
+
+            <section>
+                <h2>Work</h2>
+                <div class="project">
+                    <div class="project-title">Software Developer @ IBM<span class="project-date">2023 Aug - Present</span></div>
+                    <div class="project-description"> Developed and maintained software solutions for IBM's clients using Java, Open Liberty 
+                        and OpenShift. Integrated with various IBM products and services to provide a seamless experience for the clients. 
+                        Worked extensively with IBM Cloud, AWS, Jenkins, Docker, and Kubernetes (OpenShift). Participated regularly in AI 
+                        hackathons and competitions to build AI agents and solutions. A quick learner and collaborative team player, 
+                        experienced in working with globally distributed teams across different time zones.
+
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Software Developer Intern @ IBM<span class="project-date">2023 Jan - 2023 Aug</span></div>
+                    <div class="project-description">As an intern, gained hands-on experience with Open Liberty, Java, and modern development 
+                        tools while collaborating in a team of three to design and build a functional web application. The project strengthened 
+                        understanding of enterprise Java development, API design, and collaborative software engineering practices.</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Blogs</h2>
+                <div class="project">
+                    <div class="project-title">Automating Excel Workflows in Box Using Python, Box SDK, and OpenPyXL</div>
+                    <div class="project-description">As engineers, we're always looking for ways to automate workflows and boost efficiency. 
+                        One such challenge led to automation ofExcel processes on Box using Python, the Box SDK, and OpenPyXL, enabling seamless 
+                        data syncing, removing manual updates, and simplifying reporting. What started as a small automation project turned 
+                        into a valuable learning experience, which is shared with the world through this blog.
+                        <a href="https://dzone.com/articles/excel-automation-in-box-using-python-and-openpyxl">Read the blog.</a></div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Jakarta WebSocket Essentials: A Guide to Full-Duplex Communication in Java</div>
+                    <div class="project-description">A blog post that explores the fundamentals of WebSocket and its implementation in Java,
+                        specifically the Jakarta WebSocket API provided by Open Liberty.
+                        <a href="https://dzone.com/articles/jakarta-websocket-essentials">Read the blog</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Mastering Sealed Classes in Java: Model Hierarchies with Confidence</div>
+                    <div class="project-description">A blog post on sealed classes in Java. It discusses it implementation, advantages and use cases.
+                        <a href="https://masterjava.hashnode.dev/mastering-sealed-classes-in-java-model-hierarchies-with-confidence">Read the blog</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Speaking Events</h2>
+                <div class="project">
+                    <div class="project-title">WebSphere User Group</div>
+                    <div class="project-description">Hosted a Demo of IBM WebSphere Automation to the audience of WebSphere User Group Kochi.</div>
+                </div>
+                <div class="project">
+                    <div class="project-title">FOSS Kochi</div>
+                    <div class="project-description">Introduced and demoed Open Liberty and its features to the Open Source and tech loving audience of
+                        Kochi. <a href="https://youtu.be/eGbOpxgwcU4?t=6578">View event </a>(It's in Malayalam BTW)</div>
+                </div>
+            </section>
     </div>
-    <img src="./Abhinav_profile_pic.jpg" alt="Abhinav's profile pic" height="217px">
-    </section>
-
-    <section>
-        <h2>Work</h2>
-        <div class="project">
-            <div class="project-title">Software Developer @ IBM<span class="project-date">2023 Aug - Present</span></div>
-            <div class="project-description"> Developed and maintained software solutions for IBM's clients using Java, Open Liberty 
-                and OpenShift. Integrated with various IBM products and services to provide a seamless experience for the clients. 
-                Worked extensively with IBM Cloud, AWS, Jenkins, Docker, and Kubernetes (OpenShift). Participated regularly in AI 
-                hackathons and competitions to build AI agents and solutions. A quick learner and collaborative team player, 
-                experienced in working with globally distributed teams across different time zones.
-
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-title">Software Developer Intern @ IBM<span class="project-date">2023 Jan - 2023 Aug</span></div>
-            <div class="project-description">As an intern, gained hands-on experience with Open Liberty, Java, and modern development 
-                tools while collaborating in a team of three to design and build a functional web application. The project strengthened 
-                understanding of enterprise Java development, API design, and collaborative software engineering practices.</div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Blogs</h2>
-        <div class="project">
-            <div class="project-title">Automating Excel Workflows in Box Using Python, Box SDK, and OpenPyXL</div>
-            <div class="project-description">As engineers, we're always looking for ways to automate workflows and boost efficiency. 
-                One such challenge led to automation ofExcel processes on Box using Python, the Box SDK, and OpenPyXL, enabling seamless 
-                data syncing, removing manual updates, and simplifying reporting. What started as a small automation project turned 
-                into a valuable learning experience, which is shared with the world through this blog.
-                <a href="https://dzone.com/articles/excel-automation-in-box-using-python-and-openpyxl">Read the blog.</a></div>
-        </div>
-        <div class="project">
-            <div class="project-title">Jakarta WebSocket Essentials: A Guide to Full-Duplex Communication in Java</div>
-            <div class="project-description">A blog post that explores the fundamentals of WebSocket and its implementation in Java,
-                 specifically the Jakarta WebSocket API provided by Open Liberty.
-                <a href="https://dzone.com/articles/jakarta-websocket-essentials">Read the blog</a>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-title">Mastering Sealed Classes in Java: Model Hierarchies with Confidence</div>
-            <div class="project-description">A blog post on sealed classes in Java. It discusses it implementation, advantages and use cases.
-                <a href="https://masterjava.hashnode.dev/mastering-sealed-classes-in-java-model-hierarchies-with-confidence">Read the blog</a>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Speaking Events</h2>
-        <div class="project">
-            <div class="project-title">WebSphere User Group</div>
-            <div class="project-description">Hosted a Demo of IBM WebSphere Automation to the audience of WebSphere User Group Kochi.</div>
-        </div>
-        <div class="project">
-            <div class="project-title">FOSS Kochi</div>
-            <div class="project-description">Introduced and demoed Open Liberty and its features to the Open Source and tech loving audience of
-                 Kochi. <a href="https://youtu.be/eGbOpxgwcU4?t=6578">View event </a>(It's in Malayalam BTW)</div>
-        </div>
-    </section>
-
     <footer>
         <div class="footer-content">
             <ul class="footer-links">
